@@ -11,7 +11,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path='/' element={<Main />}></Route>
       </Routes>
     </ThemeProvider>
   );

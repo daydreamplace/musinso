@@ -29,7 +29,7 @@ const Container = styled.div`
 
     h1 {
       font-size: 1.5rem;
-      font-weight: 700;
+      /* font-weight: 700; */
     }
 
     span:hover {

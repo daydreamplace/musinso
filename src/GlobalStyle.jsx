@@ -8,17 +8,27 @@ const GlobalStyle = createGlobalStyle`
   }
   
   a {
+    color: inherit;
     text-decoration: none;
   }
 
   body {
-    width: 1300px;
-    margin:0 auto;
+    margin: 0 auto;
     font-family: 'NEXON Lv2 Gothic';
   }
 
   input, textarea, button {
     font-family: inherit;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'NEXON Lv1 Gothic OTF';
+  }
+
+  .default-width{
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @font-face {

@@ -44,6 +44,10 @@ const Container = styled.div`
     margin-left: 20px;
     color: rgb(128, 128, 128);
     font-size: 1rem;
+
+    li {
+      margin-top: 10px;
+    }
   }
 
   .active {

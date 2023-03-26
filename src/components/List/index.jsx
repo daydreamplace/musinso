@@ -1,15 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import Table from './Table';
-
-const categoryList = [
-  { id: 1, title: '전체', path: '' },
-  { id: 2, title: '담당자 확인', path: 'confirm' },
-  { id: 3, title: '처리 중', path: 'process' },
-  { id: 4, title: '완료', path: 'complete' },
-  { id: 5, title: '요청취소', path: 'cancle' },
-  { id: 6, title: '반납필요', path: 'return' },
-];
+import Footer from './Footer';
+import { categoryList } from '../../constant';
 
 const List = () => {
   return (
@@ -18,11 +11,12 @@ const List = () => {
       <div className='category'>
         {categoryList.map(category => (
           <NavLink key={category.id} end={category.id === 1} to={category.path} className={({ isActive }) => (isActive ? ' active' : '')}>
-            {category.title} 0
+            {category.title} {category.count}
           </NavLink>
         ))}
       </div>
       <Table />
+      <Footer />
     </Container>
   );
 };

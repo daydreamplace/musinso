@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .default-width{
-    width: 1200px;
+    width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }

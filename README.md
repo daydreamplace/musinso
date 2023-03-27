@@ -23,7 +23,7 @@ git clone https://github.com/daydreamplace/musinso.git
 
 2.  Navigate to a folder.
 ```
-cd react-task
+cd musinso
 ```
 
 <br />
